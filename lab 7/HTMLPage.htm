@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE>Descriere Tiselita David</TITLE>
+    <style>
+        header {
+            height: 40px;
+            background-color: #0094ff;
+        }
+
+        bofy {
+            padding: 10px;
+            margin: 0;
+            font-family: Helvetica;
+        }
+
+        #NumePrenume {
+            font-weight: 200;
+        }
+
+        table, td {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        #Pasiuni {
+            border-style: dashed;
+            width: 50px;
+        }
+
+        #pozaprofil {
+            border-radius: 30px;
+            padding: 20px;
+            position: absolute;
+            top: 80px;
+            right: 200px;
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #ff6a00
+        }
+    </style>
+    <script>
+        function altaviata() {
+            document.getElementById("NumePrenume").innerHTML = "Ing.Tiselita David";
+            document.getElementById("mailprofil").innerHTML = "Tiselita.Va.David@student.utcluj.ro";
+
+
+
+            var tabelEducatie = document.getElementById("tabelEducatie");
+            tabelEducatie.rows[0].cells[0].innerHTML = "UTCN";
+            tabelEducatie.rows[1].cells[0].innerHTML = "Hello Word";
+            tabelEducatie.rows[2].cells[0].innerHTML = "42";
+
+
+
+           document.getElementsById("David").src = "David.jpg";
+            document.body.style.backgroundColor = "Potato";
+            var par = document.getElementsByTagName("p");
+            var i;
+            for (i = 0; i < par.length; i++) {
+                par[i].style.color = "black";
+            }
+            document.getElementById("David").style.opacity = "0.9";
+            document.getElementById("David").style.border = "6px";
+
+
+
+       }
+        function arVarst() {
+            var azi = new Date;
+            var varstMea;
+            var anNasc = document.getElementById("varsta").innerHTML;
+            varstMea = azi.getFullYear() - parseInt(anNasc);
+            document.getElementById("varsta").inner.HTML = varstMea;
+
+
+
+       }
+    </script>
+</HEAD>
+<BODY>
+    <h1 id="NumePrenume" style=" color: #b6ff00">Tiselita David</h1>
+    <p id="mailprofil">Tiselita.Va.David@student.utcluj.ro</p>
+    <img id="pozaprofil" src="imagine.jpg" width="497px" height="433px">
+    <p onmouseover="arVarst()" id="varsta">2003</p>
+    <p>tiselita.david990@gmail.com</p>
+    <button onclick="altaviata()">Alta viata</button>
+    <p>"Educatia este cea mai puternica arma pe care voi o puteti folosi pentru a schimba lumea. (Nelson Mandela)"</p>
+    <h2>Educatie</h2>
+    <table id="tabelEducatie">
+        <tbody>
+            <tr>
+                <td>Componente si circuite pasive (anul I):</td>
+                <td>https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf3</td>
+            </tr>
+            <tr>
+                <td>Informatica aplicata (anul I):</td>
+                <td>https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf </td>
+            </tr>
+            <tr>
+                <td>Fizica I:</td>
+                <td>https://etti.utcluj.ro/files/FiseDisciplina/EaRo/03.pdf </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Pasiuni</h2>>
+    <ul>
+        <li>-Jocuri de nocor(ocazional)</li>
+        <li>-Jocuri pe calculator : PUBG, CS GO, LOL, ASSASSIN’S CRED</li>
+        <li>-Puzzle-uri de gandire: Cubul rubik, Sah, Table</li>
+        <li>-Sporturile de iarna: Skiatul si facut cercuri cu masian(drifturi pe zapada)</li>
+
+        <button><a href="HTMLPage1.htm">Back</a></button>
+</BODY>
+</HTML>
